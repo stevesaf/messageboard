@@ -1,0 +1,54 @@
+.header,
+.footer {
+ padding: 30px 20px;
+ color: #444;
+}
+.header h1 {
+ color:red;
+ margin: 0;
+ padding: 10px 0;
+ font-size: 30px;
+ text-transform: uppercase;
+}
+
+.header ul,
+.footer ul {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+
+.header li {
+ display: inline;
+ text-align: center;
+}
+
+.header li a {
+ color:#f01251 ;
+ margin: 2px;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+ background-color: #f01251 ;
+ margin: 2px;
+}
+footer {
+ font-size: 12px;
+ padding: 20px 0;
+}
+
+footer .col-sm-8 {
+ display: flex;
+ justify-content: flex-end;
+}
+
+footer ul {
+ list-style: none;
+}
+
+footer li img {
+ width: 32px;
+ height: 32px;
+}

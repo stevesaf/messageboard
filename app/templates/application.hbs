@@ -1,5 +1,31 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h1>BEST MESSAGE BOARDS</h1>
+      </div>
+      <div class="pull-right">
+        <ul class="nav nav-pills">
+             <li class="nav-all active"><a href="#">Home</a></li>
+             <li class="nav-about"><a>{{#link-to 'about'}}About{{/link-to}}</a></li>
+             <li class="nav-contact"><a>{{#link-to 'contact'}}Contact{{/link-to}}</a></li>
+           </ul>
+
+         </div>
+       </div>
+     </div>
+   </div>
 
 {{outlet}}
+
+<footer class="container">
+   <div class="row">
+     <p class="col-sm-4">&copy; 2017 BMB</p>
+     <ul class="col-sm-8">
+       <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"></li>
+                <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"></li>
+       <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"></li>
+       <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"></li>
+     </ul>
+   </div>
+ </footer>

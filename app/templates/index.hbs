@@ -1,0 +1,10 @@
+<h1> Check out these questions. Respond if you care.</h1>
+
+<br>
+<ul>
+{{#each model as |message|}}
+ {{messageboard-post messageboard=message}}
+{{/each}}
+</ul>
+
+{{new-messageboard saveMessageboard2="saveMessageboard3"}}

@@ -1,0 +1,21 @@
+<h1>Question: {{model.question}}</h1>
+<h2>{{model.notes}}</h2>
+<h4>Author: {{model.author}}</h4>
+<br>
+<h3>answers</h3>
+<ul>
+{{#each model.answers as |answer|}}
+  {{answer.replier}} {{answer.answer}}
+{{/each}}
+</ul>
+
+{{new-answer saveAnswer="saveAnswer" messageboard=model}}
+<!-- <h2>More information about the question:"{{model.question}}"</h2>
+<h4>asked by {{model.author}}</h4>
+<h3>{{model.notes}}</h3>
+
+{{#each model as |messageboard|}}
+ {{messageboard-post messageboard=messageboard}}
+{{/each}}
+
+{{new-answer saveAnswer="saveAnswer" messageboard=model}} -->
