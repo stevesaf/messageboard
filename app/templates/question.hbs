@@ -1,11 +1,19 @@
+<div style=" margin-left: 20%;">
 <h1>Question: {{model.question}}</h1>
 <h2>{{model.notes}}</h2>
 <h4>Author: {{model.author}}</h4>
+</div>
+<div style="margin-left: 20%">
+{{update-question messageboard=model update="update"}}
+{{delete-question messageboard=model destroyMessageboard="destroyMessageboard"}}
+</div>
+<hr>
 <br>
-<h3>answers</h3>
+<h3 style="margin-left:5% ; font-size: 50px;">Answers</h3>
 <ul>
 {{#each model.answers as |answer|}}
-  {{answer.replier}} {{answer.answer}}
+  <li><span style="font-weight: bold;">{{answer.replier}} answers:</span> {{answer.answer}}</li>
+  <br>
 {{/each}}
 </ul>
 

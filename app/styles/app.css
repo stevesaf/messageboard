@@ -33,6 +33,7 @@
 .nav-pills>li.active>a:focus {
  background-color: #f01251 ;
  margin: 2px;
+ color: white;
 }
 footer {
  font-size: 12px;
