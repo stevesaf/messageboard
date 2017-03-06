@@ -1,2 +1,9 @@
 
-<h2>{{#link-to 'question' messageboard.id}}{{messageboard.question}}{{/link-to}}</h2>
+<h2 style="display: inline">
+  {{#link-to 'question' messageboard.id}}
+    {{messageboard.question}}
+    <span id="fire" style="text-align:right ; color: orange">
+      {{question-popularity messageboard}}
+    </span>
+  {{/link-to}}
+</h2>
