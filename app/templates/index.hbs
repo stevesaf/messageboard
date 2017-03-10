@@ -3,7 +3,12 @@
 <br>
 <ul>
 {{#each model as |message|}}
-<li style="display: inline;"><span id="question" style="text-align:left">{{messageboard-post messageboard=message}}</span><hr></li>
+<li style="display: inline;">
+  <span id="question" style="text-align:left">
+    {{messageboard-post messageboard=message}}
+  </span>
+  <hr>
+</li>
 {{/each}}
 </ul>
 
